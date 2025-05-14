@@ -1,0 +1,9 @@
+/home/bobervitalya228/QT/Mandelbrot_Set/build/Desktop-Debug/CMakeFiles/Mandelbrot_Set.dir
+/home/bobervitalya228/QT/Mandelbrot_Set/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/bobervitalya228/QT/Mandelbrot_Set/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/bobervitalya228/QT/Mandelbrot_Set/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/bobervitalya228/QT/Mandelbrot_Set/build/Desktop-Debug/CMakeFiles/install.dir
+/home/bobervitalya228/QT/Mandelbrot_Set/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/bobervitalya228/QT/Mandelbrot_Set/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/bobervitalya228/QT/Mandelbrot_Set/build/Desktop-Debug/CMakeFiles/Mandelbrot_Set_autogen_timestamp_deps.dir
+/home/bobervitalya228/QT/Mandelbrot_Set/build/Desktop-Debug/CMakeFiles/Mandelbrot_Set_autogen.dir
