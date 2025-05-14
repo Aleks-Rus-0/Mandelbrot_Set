@@ -10,10 +10,9 @@ Widget::Widget(QWidget *parent)
     x_0 = Width / 2;
     y_0 = Height / 2;
     len_cell = 300;
-    quality = 2;
+    quality = 4;
     rubberBand = nullptr;
     ui->setupUi(this);
-    //
 }
 
 Widget::~Widget()
@@ -34,7 +33,7 @@ void Widget::paintEvent(QPaintEvent *event)
             for (int l = 0; l < 100; ++l) {
                 z = z * z + c;
                 if (abs_complex2(z) - 4 > 0) {
-                    paint.fillRect(i, j, quality, quality, QBrush{QColor(1.5 * l, 2.5 * l, 2 * l)});
+                    paint.fillRect(i, j, quality, quality, QBrush{QColor(3 * l, l, 3 * l)});
                     paint.setPen(pen);
                     break;
                 }
@@ -67,7 +66,7 @@ void Widget::mouseReleaseEvent(QMouseEvent *event)
     QPoint finish = event->pos();
 
     if (abs(finish.ry() - origin.ry()) > abs(finish.rx() - origin.rx())) {
-        int len_cell_ = width() / abs(to_Complex(finish.ry(), 0).real() - to_Complex(origin.ry(), 0).real());
+        int len_cell_ = height() / abs(to_Complex(0, finish.ry()).imag() - to_Complex(0, origin.ry()).imag());
 
         x_0 = (-to_Complex(abs(finish.rx() - origin.rx()) / 2 + std::min(finish.rx(), origin.rx()), 0).real()) * len_cell_
               + abs(finish.rx() - origin.rx()) / 2 + std::min(finish.rx(), origin.rx());
@@ -75,7 +74,7 @@ void Widget::mouseReleaseEvent(QMouseEvent *event)
               + abs(finish.ry() - origin.ry()) / 2 + std::min(finish.ry(), origin.ry());
         len_cell = len_cell_;
     } else {
-        int len_cell_ = height() / abs(to_Complex(finish.rx(), 0).real() - to_Complex(origin.rx(), 0).real());
+        int len_cell_ = width() / abs(to_Complex(finish.rx(), 0).real() - to_Complex(origin.rx(), 0).real());
 
         x_0 = (-to_Complex(abs(finish.rx() - origin.rx()) / 2 + std::min(finish.rx(), origin.rx()), 0).real()) * len_cell_
               + abs(finish.rx() - origin.rx()) / 2 + std::min(finish.rx(), origin.rx());

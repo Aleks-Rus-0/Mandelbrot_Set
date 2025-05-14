@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     QWidget *window = new QWidget;
-    window->setWindowTitle("Set Mondelbrot");
+    window->setWindowTitle("Mandelbrot Set");
 
 
     Widget *w = new Widget;
